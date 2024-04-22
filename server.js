@@ -6,6 +6,13 @@ const PORT = 3000;
 const PUBLIC_DIR = path.join(__dirname, 'src');
 const ERROR_PAGES_DIR = __dirname;
 
+console.clear
+console.info("Guest24897HOST V1.0.1")
+console.info("Web-server hosting made easy!")
+console.info("")
+console.log("LOG: Adding files to web-server from folder src . . .")
+console.info("")
+
 const server = http.createServer((req, res) => {
     let filePath = path.join(PUBLIC_DIR, req.url === '/' ? 'index.html' : req.url);
     let contentType = getContentType(filePath);
@@ -55,6 +62,8 @@ function serveErrorPage(res, statusCode) {
     });
 }
 
+// Executes when pages adding complete
 server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server started and running on port ${PORT}.`);
+    console.log(` • You can visit your hosted server on http://localhost:${PORT}`);
 });
