@@ -1,0 +1,20 @@
+{
+  "name": "guest24897host",
+  "version": "1.0.1",
+  "description": "Web-server hosting became easy!",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imguest24897/guest24897host.git"
+  },
+  "author": "Guest24897",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/imguest24897/guest24897host/issues"
+  },
+  "homepage": "https://github.com/imguest24897/guest24897host#readme"
+}
